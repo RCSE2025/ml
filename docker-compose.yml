@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  nsfw_checker:
+    build:
+      context: .
+      network: host
+    container_name: nsfw_checker
+    environment:
+      - WORKERS_COUNT=4
+      - HOST=0.0.0.0
+    ports:
+      - "8000:8000"

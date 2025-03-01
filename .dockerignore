@@ -1,0 +1,6 @@
+venv
+.ipynb_checkpoints
+sensored
+tmp
+__pycache__
+.env
